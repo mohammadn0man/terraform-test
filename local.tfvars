@@ -1,4 +1,5 @@
 aws_region = "ap-south-1"
+iam_number = 8104XXXXXXX
 
 use_s3_backend_flag                    = false
 terraform_state_bucket_name            = "terraform-task-state-bucket"

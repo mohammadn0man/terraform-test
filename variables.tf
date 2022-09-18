@@ -21,3 +21,6 @@ variable "instance_ami" {
 }
 variable "application_automation_script" {
 }
+
+variable "iam_number" {
+}
