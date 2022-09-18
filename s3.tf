@@ -1,9 +1,6 @@
 resource "aws_s3_bucket" "terraform_state_bucket" {
   count  = var.use_s3_backend_flag == true ? 1 : 0
   bucket = var.terraform_state_bucket_name
-  lifecycle {
-    prevent_destroy = true
-  }
 }
 resource "aws_s3_bucket_public_access_block" "terraform_state_bucket_access" {
   count                   = var.use_s3_backend_flag == true ? 1 : 0

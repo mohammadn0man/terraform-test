@@ -17,5 +17,6 @@ sudo sed -i "s/MAC_ADDRESS/$MAC_ADDRESS/g" /var/www/html/index.html
 
 sudo systemctl enable crond
 sudo systemctl status crond
-
-echo "* * * * * /tmp/terraform-test/health_check.sh" >> /var/spool/cron/crontabs/root
+echo "* * * * * /tmp/terraform-test/scripts/health_check.sh" >> mycron
+crontab mycron
+rm mycron

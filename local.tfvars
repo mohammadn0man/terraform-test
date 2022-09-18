@@ -1,6 +1,6 @@
 aws_region = "ap-south-1"
 
-use_s3_backend_flag                    = true
+use_s3_backend_flag                    = false
 terraform_state_bucket_name            = "terraform-task-state-bucket"
 terraform_state_dynamodb_table_name    = "terraform-task-state-table"
 terraform_state_dynamodb_table_hashkey = "LockID"
